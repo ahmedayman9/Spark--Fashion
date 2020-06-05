@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Welcome to SPARK-spark-online-store Registeration</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <style>
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin:auto;
+  width:90% ;
+  }
+body{
+  background-image: url(form.jpg);
+  background-position:65%;
+
+}
+.header .navbar{
+  background-color :black;
+  color: white;
+  overflow: hidden;
+
+}
+.header .navbar h2{
+  float: left;
+  margin: 15px;
+}
+.header .navbar h2 span {
+  color: yellow;
+}
+.header .navbar ul {
+  list-style: none;
+  padding-left: 0;
+  float: right;
+}
+.header .navbar ul li {
+  float: left;
+  padding: 15px;
+}
+
+.header .navbar ul li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+.header .navbar ul li a:hover{
+  color: yellow;
+}
+.wrapper{
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  margin: 20px auto;
+  box-shadow: 1px 1px 2pxrgba black;
+  padding: 30px;
+}
+
+.wrapper .title{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color:black;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.wrapper .form{
+  width: 100%;
+}
+
+.wrapper .form .inputfield{
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .form .inputfield label{
+   width: 250px;
+   color: rgb(2, 2, 36);
+   margin-right: 10px;
+  font-size: 14px;
+}
+
+.wrapper .form .inputfield .input,
+.wrapper .form .inputfield .textarea{
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.wrapper .form .inputfield .textarea{
+  width: 100%;
+  height: 125px;
+  resize: none;
+}
+
+.wrapper .form .inputfield .custom_select{
+  position: relative;
+  width: 100%;
+  height: 37px;
+}
+
+.wrapper .form .inputfield .custom_select:before{
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  border: 8px solid;
+  border-color: #d5dbd9 transparent transparent transparent;
+  pointer-events: none;
+}
+
+.wrapper .form .inputfield .custom_select select{
+  -webkit-appearance: none;
+  -moz-appearance:   none;
+  appearance:        none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 1px solid #d5dbd9;
+  border-radius: 3px;
+}
+
+
+.wrapper .form .inputfield .input:focus,
+.wrapper .form .inputfield .textarea:focus,
+.wrapper .form .inputfield .custom_select select:focus{
+  border: 1px solid #011549;
+}
+
+.wrapper .form .inputfield p{
+   font-size: 14px;
+   color: #757575;
+}
+.wrapper .form .inputfield .check{
+  width: 15px;
+  height: 15px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+.wrapper .form .inputfield .check input[type="checkbox"]{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.wrapper .form .inputfield .check .checkmark{
+  width: 15px;
+  height: 15px;
+  border: 1px solid #09033b;
+  display: block;
+  position: relative;
+}
+.wrapper .form .inputfield .check .checkmark:before{
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  width: 5px;
+  height: 2px;
+  border: 2px solid;
+  border-color: transparent transparent #fff #fff;
+  transform: rotate(-45deg);
+  display: none;
+}
+.wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark{
+  background:#011549;
+}
+
+.wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before{
+  display: block;
+}
+
+.wrapper .form .inputfield .btn{
+  width: 100%;
+   padding: 8px 10px;
+  font-size: 20px; 
+  border: 0px;
+  background:  black;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+
+.wrapper .form .inputfield .btn:hover{
+  background:yellow;
+}
+
+.wrapper .form .inputfield:last-child{
+  margin-bottom: 0;
+}
+
+
+.wrapper .form .inputfield label{
+  margin-bottom: 5px;
+}
+ P{
+   text-align: center;
+   
+ } 
+  /*--Start Footer*/
+  .footer {
+    background-color :black;
+    color: white;
+    overflow: hidden;
+    height: 30px;
+    
+ }
+
+ .footer  p {
+     text-align: center;
+     color: white;
+ }
+  /*--End Footer*/
+</style>
+</head>
+
+<body>
+     <!--Start Header-->
+     <div class="header">
+        <div class="navbar">
+            <div class="container">
+                <h2>SP<span>ARK</span></h2>
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="about.html" >About</a></li>
+                    <li><a href="gallery.html" >Gallery</a></li>
+                    <li><a href="models.html" >Best Models</a></li>
+                    <li><a href="Form.html" >Register | Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--End Header-->
+
+<!--Start Form-->
+    <form>
+        <div class="wrapper">
+            <div class="title">Create an Account</div>
+            <div class="form">
+            <div class="inputfield">
+                <label>First Name</label>
+                <input type="text" class="input" placeholder="first name" required>
+                </div>  
+                <div class="inputfield">
+                <label>Last Name</label>
+                <input type="text" class="input" placeholder="last name" required>
+            </div> 
+            <div class="inputfield">
+                <label>Email Address</label>
+                <input type="text" class="input" placeholder="enter your e-mail" required>
+            </div> 
+            <div class="inputfield">
+                <label>Password</label>
+                <input type="password" class="input" placeholder="enter your password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+            </div>  
+            <div class="inputfield">
+                <label>Confirm Password</label>
+                <input type="password" class="input" placeholder="repeat your password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+            </div> 
+                <div class="inputfield">
+                <label>Gender</label>
+                <div class="custom_select">
+                    <select>
+                    <option value="">Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    </select>
+                </div>
+            </div> 
+                
+            <div class="inputfield">
+                <label>Phone Number</label>
+                <input type="text" class="input" placeholder="enter your number" required>
+            </div> 
+
+            <div class="inputfield">
+                <label>Address</label>
+                <textarea class="textarea" placeholder="enter your address" ></textarea>
+            </div> 
+            
+            <div class="inputfield">
+                <label>Postal Code</label>
+                <input type="text" class="input" placeholder="postal code" required>
+            </div> 
+            <div class="inputfield terms">
+                <label class="check">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <p>Agreed to terms and conditions</p>
+            </div> 
+            <div class="inputfield">
+                <input type="submit" value="Register" class="btn">
+            </div> <br>
+            <p>or</p><br>
+            <div class="inputfield">
+                <input type="submit" value="I already have an account" class="btn">
+            </div>
+            </div>
+        </div>	
+    </form>
+        <!--End Form-->
+
+        <!--Start Footer-->
+            <div class="footer">
+                <p>SPARK Fashion, Copyright &copy; 2020</p>
+             </div>
+        <!--End Footer-->
+
+<script>
+
+// Password 
+var password = document.getElementById("password")
+
+//check confirm password 
+confirm_password = document.getElementById("Passwords is similar ");
+
+//function of confirmation
+function validatePassword(){
+
+if(password.value != confirm_password.value) {
+
+confirm_password.setCustomValidity("Passwords Don't Match, please check your password again");
+}
+
+else
+ {
+
+confirm_password.setCustomValidity('');
+}
+
+}
+//validate password 
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
+// Get Slider Items
+var sliderImages = Array.from(document.querySelectorAll('.slider-container img'));
+
+// Get Number Of Slides
+var slidesCount = sliderImages.length;
+
+// Set Current Slide
+var currentSlide = 1;
+
+// Slide Number Element
+var slideNumberElement = document.getElementById('slide-number');
+
+// Previous and Next Buttons
+var nextButton = document.getElementById('next');
+var prevButton = document.getElementById('prev');
+
+nextButton.onclick = nextSlide;
+prevButton.onclick = prevSlide;
+
+// Create The Main UL Element
+var paginationElement = document.createElement('ul');
+
+// Set ID On Created Ul Element
+paginationElement.setAttribute('id', 'pagination-ul');
+
+// Create List Items Based On Slides Count
+for (var i = 1; i <= slidesCount; i++) {
+
+  // Create The Li
+  var paginationItem = document.createElement('li');
+
+  // Set Custom Attribute
+  paginationItem.setAttribute('data-index', i);
+
+  // Set Item Content
+  paginationItem.appendChild(document.createTextNode(i));
+
+  // Append Items to The Main Ul List
+  paginationElement.appendChild(paginationItem);
+
+}
+
+// Add The Created UL Element to The Page
+document.getElementById('indicators').appendChild(paginationElement);
+
+// Get The New Created UL
+var paginationCreatedUl = document.getElementById('pagination-ul');
+
+// Get Pagination Items
+var paginationsBullets = Array.from(document.querySelectorAll('#pagination-ul li'));
+
+// Loop Through All Bullets Items
+for (var i = 0; i < paginationsBullets.length; i++) {
+
+  paginationsBullets[i].onclick = function () {
+
+    currentSlide = parseInt(this.getAttribute('data-index'));
+
+    theChecker();
+
+  }
+
+}
+
+// Trigger The Checker Function
+theChecker();
+function nextSlide() {
+
+  if (nextButton.classList.contains('disabled')) {
+
+    return false;
+
+  } else {
+
+    currentSlide++;
+
+    theChecker();
+
+  }
+
+}
+
+// Previous Slide Function
+function prevSlide() {
+
+  if (prevButton.classList.contains('disabled')) {
+    return false;
+
+  } else {
+
+    currentSlide--;
+
+    theChecker();
+
+  }
+
+}
+
+// Create The Checker Function
+function theChecker() {
+
+ slideNumberElement.textContent = 'Slide #' + (currentSlide) + ' of ' + (slidesCount);
+
+  removeAllActive();
+
+  sliderImages[currentSlide - 1].classList.add('active');
+
+  paginationCreatedUl.children[currentSlide - 1].classList.add('active');
+
+
+  if (currentSlide == 1) {
+    prevButton.classList.add('disabled');
+  } else {
+    prevButton.classList.remove('disabled');
+  }
+
+  // Check if Current Slide is The Last
+  if (currentSlide == slidesCount) {
+    nextButton.classList.add('disabled');
+
+  } else {
+
+    nextButton.classList.remove('disabled');
+
+  }
+
+}
+
+// Remove All Active Classes From Images and Pagination Bullets
+function removeAllActive() {
+
+  sliderImages.forEach(function (img) {
+
+    img.classList.remove('active');
+
+  });
+
+  // Loop Through Pagination Bullets
+  paginationsBullets.forEach(function (bullet) {
+
+    bullet.classList.remove('active');
+
+  });
+
+}
+
+</script>
+</body>
+</html>
